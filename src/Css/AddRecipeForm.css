@@ -1,0 +1,220 @@
+.ingredient_form,.methods_form{
+    display: flex;
+width: 100%;
+height: fit-content;
+    margin: 2rem 0rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ingredient_form input,select{
+    flex: .5;
+border: none;
+outline: none;
+}
+.methods_form{
+    justify-content: space-around;
+}
+.form_wrapper{
+    height: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+    flex-wrap: wrap;
+}
+.add_recipe_form{
+    padding: 3rem;
+    border-radius: 0px;
+    flex: 1 1 15rem;
+
+background: #ffffff;
+box-shadow:  -5px -5px 57px #f7f7f7,
+             5px 5px 57px #ffffff;
+            
+    
+}
+.add_recipe_form input,select{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: clamp(5rem,10vw,7rem);
+    margin: .2rem;
+    border-radius: .9rem;
+padding: .3rem;
+margin-right: .3rem;
+background: #ffffff;
+box-shadow:  20px 20px 96px #adadad,
+             -20px -20px 96px #ffffff;
+}
+.add_recipe_form *:hover{
+box-shadow: 0 0 0 transparent;
+}
+.dishName
+{
+    display: flex;
+    width: 100%;
+}
+.dishName .inputText{
+width: 100%;
+}
+.add_ingredient_div{
+    border-radius: 4px;
+background: linear-gradient(225deg, #ffffff, #e6e6e6);
+box-shadow:  -5px 5px 10px #c4c4c4,
+             5px -5px 10px #ffffff;
+width: 4rem;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+align-items: center;
+color: tomato;
+font-weight: bolder;
+cursor: pointer;
+}
+.add_ingredient_div, .add_methods{
+ flex: .5;
+ background: linear-gradient(225deg, #ffffff, #e6e6e6);
+ box-shadow:  -5px 5px 10px #c4c4c4,
+              5px -5px 10px #ffffff;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: tomato;
+ font-weight: bolder;
+ cursor: pointer;
+padding: .3rem 0rem;  
+border: none;
+outline: none;
+}
+.methods_form textarea{
+border: none;
+outline: none;
+flex: 1;
+margin-right: .5rem;
+
+background: linear-gradient(225deg, #ffffff, #e6e6e6);
+box-shadow:  -5px 5px 10px #c4c4c4,
+             5px -5px 10px #ffffff;
+}
+
+.input_container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.image_URL{
+    flex: 1;
+}
+.recipe_submit_button:disabled{
+    border: none;
+    outline: none;
+    color: dimgray;
+    background: linear-gradient(225deg, #ffffff, #e6e6e6);
+    box-shadow:  -5px 5px 10px #c4c4c4,
+                 5px -5px 10px #ffffff;
+       
+}
+.recipe_submit_button{
+    border: none;
+    outline: none;
+    background: linear-gradient(225deg, #ffffff, #e6e6e6);
+    box-shadow:  -5px 5px 10px #c4c4c4,
+                 5px -5px 10px #ffffff;
+       
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: .5rem 0;
+font-weight: bolder;
+font-size: 1rem;
+color: lime;
+margin-top: 3rem;
+}
+.ingredient_container
+{
+    display: flex;
+    justify-content: space-between;
+    flex: .7;
+    margin: .4rem;
+    margin-right: 1.3rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 8px;
+   min-height: 15rem;
+   flex: 1 1 15rem;
+
+background: #ffffff;
+box-shadow:  -5px -5px 20px #d1d1d1,
+             5px 5px 20px #ffffff;
+             padding: .4rem;
+
+}
+
+.ingredient_wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+    margin: .3rem;
+background: #ffffff;
+max-height: 2.5rem;
+opacity: 0;
+box-shadow:  -5px -5px 20px #d1d1d1,
+             5px 5px 20px #ffffff;
+             padding: .4rem;
+             animation:fadeIn .6s ease-in forwards
+}
+
+@keyframes fadeIn{
+    from{
+opacity: 0;
+    }
+    to{
+opacity: 1;
+    }
+}
+
+.ingredient_text{
+    font-weight: bold;
+}
+
+.ingredient_delete{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: red !important;
+}
+.mehods_display
+{
+    display: flex;
+    justify-content: space-between;
+    margin: .4rem;
+    margin-right: 1.3rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+   flex: 1 1 15rem;
+overflow-x: hidden;
+    border-radius: 8px;
+   min-height: 15rem;
+background: #ffffff;
+box-shadow:  -5px -5px 20px #d1d1d1,
+             5px 5px 20px #ffffff;
+             padding: .4rem;
+             max-height: 30rem;
+             overflow: auto;
+}
+   .info_container{
+flex: 1;
+   display: flex;
+   flex-direction: column;
+
+}
+@media only screen and (max-width:900px) {
+
+}

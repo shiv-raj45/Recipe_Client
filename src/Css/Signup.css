@@ -1,0 +1,126 @@
+.signup{
+
+    height: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    }
+    .form
+    {
+    position: relative;
+    
+        display: flex;
+    flex-direction: column;
+    width: clamp(22rem,25vw,45rem);
+    padding: .5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    backdrop-filter: blur(15px);
+
+background: #ffffff;
+box-shadow:  -23px -23px 32px #e8e8e8,
+             23px 23px 32px #ffffff;
+
+    }
+    label{
+    width: 100%;
+    margin-left: .2rem;
+    text-transform: capitalize;
+    padding: .2rem;
+    font-size: 1.1rem;
+    }
+    .signupinput
+    {
+        margin-top: .3rem;
+    width: 100%;
+        height: 1.9rem;
+        outline: none;
+        border: none;
+        background: rgba(182, 182, 182, 0.5);
+    padding: 0rem .4rem;
+    border-radius: 1rem;
+
+    background: #ffffff;
+box-shadow:  20px 20px 96px #adadad,
+             -20px -20px 96px #ffffff;
+    }
+    
+    .signupinput:current
+    {
+        margin-top: .3rem;
+    width: 100%;
+        height: 1.9rem;
+        outline: none;
+        border: none;
+        background: rgba(182, 182, 182, 0.5);
+    
+    }
+    
+    .signupbutton{
+        height: 2.5rem;
+        width: 100%;
+        margin-top: 1.2rem;
+        outline: none;
+        border: none;
+        background: rgba(87, 255, 9, 0.5);
+        background: #ffffff;
+        border-radius: 1rem;
+box-shadow:  20px 20px 96px #adadad,
+             -20px -20px 96px #ffffff;
+    }
+    .signupbutton:hover{
+        background: rgb(131, 66, 216);
+        transition: .4s;
+    }
+    .error
+    {margin-bottom: 2rem;
+        width: 100%;
+        max-width: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    padding: .7rem;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(255, 88, 88);
+    backdrop-filter: blur(40px);
+    animation: fade .4s linear;
+    
+    }
+    @keyframes fade{
+        from{
+    opacity: 0;
+        }
+        to{
+    opacity: 1;
+        }
+    }
+    .login_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .login_wrapper button{
+        height: 2.5rem;
+        width: 100%;
+        margin-top: 1.2rem;
+        outline: none;
+        border: none;
+        background: tomato;
+    }
+    .login_wrapper button:hover{
+        background: wheat;
+    }

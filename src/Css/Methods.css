@@ -1,0 +1,38 @@
+.method_row{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: .3rem;
+    width: 100%;
+
+background: #ffffff;
+box-shadow:  -5px -5px 20px #d1d1d1,
+             5px 5px 20px #ffffff;
+ padding: .4rem;
+ animation:fademethod .6s ease-in forwards
+}
+
+@keyframes fademethod{
+    from{
+opacity: 0;
+    }
+    to{
+opacity: 1;
+    }
+}
+
+.step_icon,.method_text{
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: .1rem;
+}
+.method_text{
+    word-wrap: break-word;
+    word-break: break-all;
+    justify-content: flex-start;
+    padding: .2rem;
+
+}
